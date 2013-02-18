@@ -1,0 +1,6 @@
+%h1 All movies from the same director
+
+%ul
+  - @movies_similar.each do |movie|
+    %li
+      = link_to "#{movie.title}", movie_path(movie)
